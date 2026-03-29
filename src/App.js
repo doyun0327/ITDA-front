@@ -8,7 +8,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // 백엔드에 로그인 세션 확인 요청!!!!20260329 ITDA-frontend 경로 테스트ㅋㅋddgg?
+    // 백엔드에 로그인 세션 확인 요청!!!!20260329 ITDA-frontend 경로 테스트ㅋㅋdss
     axios
       .get("http://localhost:8080/api/user/me", { withCredentials: true })
       .then((res) => {
