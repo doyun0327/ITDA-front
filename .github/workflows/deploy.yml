@@ -2,7 +2,7 @@ name: Deploy Frontend
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # 현재 작업 디렉토리(_work/ITDA-front)에 바로 코드를 받습니다.
+          path: "."
 
       - name: Execute Deploy Script
         run: |
